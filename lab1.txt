@@ -1,0 +1,400 @@
+TCE@DESKTOP-O6ND56R MINGW64 ~
+$ mkdir Soumya
+
+TCE@DESKTOP-O6ND56R MINGW64 ~
+$ cd Soumya
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya
+$ touch a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya
+$ echo "hi hello tce">a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya
+$ touch b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya
+$ echo "hello Gadag, People">b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya
+$ git init
+Initialized empty Git repository in C:/Users/TCE/Soumya/.git/
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "file added"
+[main (root-commit) a82c9c5] file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        b.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo " this is a first file">a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 74b6f5c..c4ea8c7 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-hi hello tce
++ this is a first file
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 74b6f5c..c4ea8c7 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-hi hello tce
++ this is a first file
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add b.txt
+warning: in the working copy of 'b.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "file added"
+[main 593eba6] file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 74b6f5c..c4ea8c7 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-hi hello tce
++ this is a first file
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ ^C
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ pwd
+/c/Users/TCE/Soumya
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ ls
+a.txt  b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ ls -l
+total 2
+-rw-r--r-- 1 TCE 197121 22 Sep 24 15:03 a.txt
+-rw-r--r-- 1 TCE 197121 20 Sep 24 14:58 b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git log
+commit 593eba6be1f660e2b7d2519425c2179215754b1d (HEAD -> main)
+Author: Soumya Patil <soumya03.patil@gmail.com>
+Date:   Thu Sep 24 15:05:07 2026 +0530
+
+    file added
+
+commit a82c9c5df647e3de98440119ebbe4094a123e5b5
+Author: Soumya Patil <soumya03.patil@gmail.com>
+Date:   Thu Sep 24 14:58:58 2026 +0530
+
+    file added
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git --dif staged
+unknown option: --dif
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git dif --staged
+git: 'dif' is not a git command. See 'git --help'.
+
+The most similar commands are
+        diff
+        config
+        difftool
+        init
+        refs
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff --staged
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo "gadag is a district">a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 74b6f5c..0606a28 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-hi hello tce
++gadag is a district
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "text added"
+[main 31abf6a] text added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff --staged
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ $ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 74b6f5c..c4ea8c7 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-hi hello tce
++ this is a first file
+bash: $: command not found
+bash: warning:: command not found
+diff: unknown option -- git
+diff: Try 'diff --help' for more information.
+bash: index: command not found
+bash: ---: command not found
+bash: +++: command not found
+bash: @@: command not found
+bash: -hi: command not found
+bash: +: command not found
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo "hi hello">a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ $ git diff
+bash: $: command not found
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index 0606a28..ca28ab3 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1 @@
+-gadag is a district
++hi hello
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "text added"
+[main 61fc8f7] text added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ notepad a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git log --online
+fatal: unrecognized argument: --online
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git log --oneline
+61fc8f7 (HEAD -> main) text added
+31abf6a text added
+593eba6 file added
+a82c9c5 file added
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat a.txt
+hi hello
+
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat b.txt
+hello Gadag, People
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo "gadag has fresh air">b.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add b.txt
+warning: in the working copy of 'b.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "text added"
+[main 939dd01] text added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat b.txt
+gadag has fresh air
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo "enjoy at gadag with the fresh air">>a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index ca28ab3..c119934 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1,3 @@
+ hi hello
++
++enjoy at gadag with the fresh air
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "text added"
+[main 0a8690c] text added
+ 1 file changed, 2 insertions(+)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat b.txt
+gadag has fresh air
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat a.txt
+hi hello
+
+enjoy at gadag with the fresh air
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ echo "this is third line">>a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat a.txt
+hi hello
+
+enjoy at gadag with the fresh air
+this is third line
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git diff
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/a.txt b/a.txt
+index c119934..4e37bce 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1,3 +1,4 @@
+ hi hello
+
+ enjoy at gadag with the fresh air
++this is third line
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git add a.txt
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git commit -m "text added"
+[main d3915f5] text added
+ 1 file changed, 1 insertion(+)
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ cat a.txt
+hi hello
+
+enjoy at gadag with the fresh air
+this is third line
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ notepad a.txt
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git log --oneline
+d3915f5 (HEAD -> main) text added
+0a8690c text added
+939dd01 text added
+61fc8f7 text added
+31abf6a text added
+593eba6 file added
+a82c9c5 file added
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$ git show
+
+commit d3915f5186c382e47a13c25d62843eb47225d9cd (HEAD -> main)
+Author: Soumya Patil <soumya03.patil@gmail.com>
+Date:   Thu Sep 24 15:44:43 2026 +0530
+
+    text added
+
+diff --git a/a.txt b/a.txt
+index c119934..4e37bce 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1,3 +1,4 @@
+ hi hello
+
+ enjoy at gadag with the fresh air
++this is third line
+
+TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
+$
