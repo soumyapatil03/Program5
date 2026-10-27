@@ -1,87 +1,12 @@
 
 
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git commit -m "file added"
-[main 593eba6] file added
- 1 file changed, 1 insertion(+)
- create mode 100644 b.txt
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git diff
-warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
-diff --git a/a.txt b/a.txt
-index 74b6f5c..c4ea8c7 100644
---- a/a.txt
-+++ b/a.txt
-@@ -1 +1 @@
--hi hello tce
-+ this is a first file
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ ^C
 
-TCE
--rw-r--r-- 1 TCE 197121 22 Sep 24 15:03 a.txt
--rw-r--r-- 1 TCE 197121 20 Sep 24 14:58 b.txt
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git log
-commit 593eba6be1f660e2b7d2519425c2179215754b1d (HEAD -> main)
-Author: Soumya Patil <soumya03.patil@gmail.com>
-Date:   Thu Sep 24 15:05:07 2026 +0530
 
-    file added
 
-commit a82c9c5df647e3de98440119ebbe4094a123e5b5
-Author: Soumya Patil <soumya03.patil@gmail.com>
-Date:   Thu Sep 24 14:58:58 2026 +0530
-
-    file added
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git --dif staged
-unknown option: --dif
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
-           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
-           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git dif --staged
-git: 'dif' is not a git command. See 'git --help'.
-
-The most similar commands are
-        diff
-        config
-        difftool
-        init
-        refs
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git diff --staged
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ echo "gadag is a district">a.txt
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git ststus
-git: 'ststus' is not a git command. See 'git --help'.
-
-The most similar command is
-        status
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   a.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
 
 TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
 $ git diff
