@@ -8,36 +8,8 @@
 
 
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git diff
-warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
-diff --git a/a.txt b/a.txt
-index 74b6f5c..0606a28 100644
---- a/a.txt
-+++ b/a.txt
-@@ -1 +1 @@
--hi hello tce
-+gadag is a district
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git add a.txt
-warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
 
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git commit -m "text added"
-[main 31abf6a] text added
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git status
-On branch main
-nothing to commit, working tree clean
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git diff
-
-TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
-$ git diff --staged
 
 TCE@DESKTOP-O6ND56R MINGW64 ~/Soumya (main)
 $ $ git diff
